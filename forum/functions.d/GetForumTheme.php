@@ -6,14 +6,14 @@
 	while($row=mysqli_fetch_array($result))
 	{
 	$CSS_LINK = $row['css_link'];
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/local-common/css/common-game-site.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/wow.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/lightbox.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/cms-overlay/css/build/cms.min.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/forums/forums-index.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/forums/view-forum.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/forums/view-topic.css" />';
-	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/Themes/'.$CSS_LINK.'/css/forums/blizz-tracker.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/local-common/css/common-game-site.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/wow.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/lightbox.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/cms-overlay/css/build/cms.min.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/forums/forums-index.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/forums/view-forum.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/forums/view-topic.css" />';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="../wow/static/css/forums/blizz-tracker.css" />';
 
 }
 }

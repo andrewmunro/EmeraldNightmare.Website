@@ -17,7 +17,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {    //Here starts the se
         //Searchs for forum threads, search the exactly word, at begining, at end or in the middle
     $num_char = mysql_num_rows(mysql_query($sqlc,$conn));    //Get number of matchs for the menu
     $num_guild = mysql_num_rows(mysql_query($sqlg,$conn));
-    $num_arena = mysql_num_rows(mysql_query($sqla,$conn));
+    $num_arena = 0; //arena teams disabled because vanilla.
     $num_forum = mysql_num_rows(mysql_query($sqlf,$conn));
     $total = $num_char+$num_guild+$num_arena+$num_forum; //To know if show no results found
       

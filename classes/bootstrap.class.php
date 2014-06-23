@@ -2,11 +2,11 @@
 require('mysql.class.php');
 class Configuration
 {
-    private $_dbHost = "localhost";
-    private $_dbUser = "root";
-    private $_dbPass = "kabeli";
+    private $_dbHost = "nomtrees.com";
+    private $_dbUser = "mangos";
+    private $_dbPass = "1234abcd";
     
-    private $_dbName = array("Character" => array("characters"),"World" => "world","Realm" => "auth");
+    private $_dbName = array("Character" => array("characters"),"World" => "mangos","Realm" => "realmd");
     
     public function getOption($name)
     {

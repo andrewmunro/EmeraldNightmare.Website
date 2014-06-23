@@ -6,10 +6,10 @@
 	ini_set("display_errors",false);			// To check PHP error comment this line
 	//ini_set("display_errors",true);			// To verify PHP errors uncomment this line
 
-	define("DB_HOST",		"127.0.0.1");	    // Host to access the database
-	define("DB_USER",		"root");			// User to access the database
-	define("DB_PASS",		"123456");			// Password to access the database
-	define("DB_NAME",		"website");			// Name database amending
+	define("DB_HOST",		"nomtrees.com");	    // Host to access the database
+	define("DB_USER",		"mangos");			// User to access the database
+	define("DB_PASS",		"1234abcd");			// Password to access the database
+	define("DB_NAME",		"wowweb2");			// Name database amending
 	define("DB_TYPE",		"mysql");			// Database: mysql, mssql
 
 	define("REQUIRED_IP",	"");				// IP address required to access this script

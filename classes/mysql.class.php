@@ -220,29 +220,24 @@ class Character_Database extends MySQL
 		}
 	}
 	
-	public function getEquipedItems($Guid)
-	{
-		$itemsRaw = $this->fetchResult($this->getInstance()->query("SELECT itemEntry,slot FROM `item_instance` INNER JOIN `character_inventory` ON `character_inventory`.`item`=`item_instance`.`guid` WHERE owner_guid=".$this->makeArgumentsSafe($Guid)." AND slot <= 18 AND bag = 0 ORDER BY slot"));
+    public function getEquipedItems($Guid) {
+        $itemsRaw = $this->fetchResult($this->getInstance()->query("SELECT item_template,slot FROM `item_instance` INNER JOIN `character_inventory` ON `character_inventory`.`item`=`item_instance`.`guid` WHERE owner_guid=" . $this->makeArgumentsSafe($Guid) . " AND slot <= 18 AND bag = 0 ORDER BY slot"));
         $items = array();
-        foreach($itemsRaw as $item)
-        {
-            if(!in_array($item["itemEntry"],$itemsRaw))
-            {
+        foreach ($itemsRaw as $item) {
+            if (!in_array($item["item_template"], $itemsRaw)) {
                 $items[$item["slot"]] = $item;
             }
         }
         $result = array();
-        for($i = 0; $i <= 18;$i++)
-        {
-            if(isset($items[$i]))
-            {
+        for ($i = 0; $i <= 18; $i++) {
+            if (isset($items[$i])) {
                 $result[$items[$i]["slot"]] = $items[$i];
-            }else{
+            } else {
                 $result[$i] = NULL;
             }
         }
         return $result;
-	}
+    }
 	
 	public function getInfoFor($Guid)
 	{
