@@ -269,7 +269,7 @@ other: 'Other'
 <script type="text/javascript">
 //<![CDATA[
 $(function(){
-Menu.initialize('"<?php echo $website['root'];?>data/menu");
+Menu.initialize('/data/menu.json');
 Search.initialize('/ta/lookup');
 });
 //]]>

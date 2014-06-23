@@ -499,7 +499,7 @@ Login.embeddedUrl = '<?php echo $website['root']; ?>loginframe.php';
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize('"<?php echo $website['root'];?>data/menu");
+Menu.initialize('<?php echo $website['root'];?>data/menu.json');
 });
 //]]>
 </script>

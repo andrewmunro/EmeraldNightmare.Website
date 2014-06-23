@@ -116,7 +116,7 @@ shim.style.display = 'block';
 <script type="text/javascript"> 
 friendData = [];
 $(function(){
-Menu.initialize('"<?php echo $website['root'];?>data/menu");
+Menu.initialize('data/menu.json');
 Search.init('ta/lookup');
 });
 </script>
