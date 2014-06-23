@@ -8,8 +8,8 @@
 	while($row=mysqli_fetch_array($result))
 	{
 	$CSS_LINK = $row['css_link'];
-	echo '<link rel="stylesheet" href="../../wow/static/local-common/css/common.css?v17" />';
-	echo '<link rel="stylesheet" href="../../wow/static/css/wow.css?v7" />';
-	echo '<link rel="stylesheet" href="../../wow/static/css/status/realmstatus.css?v7" />';
+	echo '<link rel="stylesheet" href="../../wow/static/Themes/'.$CSS_LINK.'/local-common/css/common.css?v17" />';
+	echo '<link rel="stylesheet" href="../../wow/static/Themes/'.$CSS_LINK.'/css/wow.css?v7" />';
+	echo '<link rel="stylesheet" href="../../wow/static/Themes/'.$CSS_LINK.'/css/status/realmstatus.css?v7" />';
 }
 }

@@ -53,11 +53,12 @@ $langs    = Array(
     "fr-fr" => null
 );
 
-if (array_key_exists($lang, $langs))
+/*if (array_key_exists($lang, $langs))
     require_once("lang/" . $lang . ".php");
 else
-    require_once("/lang/en-gb.php");
+    require_once("/lang/en-gb.php");*/
 $_SESSION['Local'] = $language;
+require_once("/lang/en-gb.php");
 
 /*
 |--------------------------------------------------------------------------

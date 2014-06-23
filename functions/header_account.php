@@ -79,7 +79,7 @@ $points = mysql_query("SELECT * FROM $server_adb.account WHERE username = '".$_S
 while($get = mysql_fetch_array($points))
 {
 ?>
-<span class="balance" id="primary-balance"><?php echo $get["credits"];?></span>
+<span class="balance" id="primary-balance"><?php echo $account_extra['donation_points'];?></span>
 <?php } ?>
 </a>
 <div class="flyout-menu" id="accountBalance-menu">
