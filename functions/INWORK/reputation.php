@@ -2040,7 +2040,7 @@ Login.embeddedUrl = 'https://eu.battle.net/login/login.frag';
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize('/data/menu.json');
+Menu.initialize('"<?php echo $website['root'];?>data/menu");
 });
 //]]>
 </script>

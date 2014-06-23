@@ -1590,7 +1590,7 @@ other: 'Other'
 <script type="text/javascript">
 //<![CDATA[
 $(function(){
-Menu.initialize('/data/menu.json');
+Menu.initialize('"<?php echo $website['root'];?>data/menu");
 Search.initialize('/ta/lookup');
 });
 //]]>
