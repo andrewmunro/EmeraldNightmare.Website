@@ -103,7 +103,7 @@ try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
 	</div>
 
 	<span class="clear"><!-- --></span>
-	<div class="under-name color-c<?php echo $_GET["class"]; ?>">
+	<div class="under-name color-c<?php echo @$character->getObjectInfo()->class ?>">
 	<span class="level"><strong><?php echo @$character->getObjectInfo()->level; ?></strong></span> <a href="#" class="race"><?php
   echo @$armory['race'.$raceNum];
   ?></a> <a id="profile-info-spec" href="#" class="spec tip"><?php
