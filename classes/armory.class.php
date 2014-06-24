@@ -87,8 +87,8 @@ class Armory_Character extends Armory {
     private $_equipedItems;
 
     public function __construct($name) {
-        $this->setCharDb(new Character_Database(array('host' => 'nomtrees.com', 'username' => 'mangos', 'password' => '1234abcd', ucfirst('character') => 'characters')));
-        $this->setWorldDb(new World_Database(array('host' => 'nomtrees.com', 'username' => 'mangos', 'password' => '1234abcd', ucfirst('world') => 'mangos')));
+        $this->setCharDb(new Character_Database(array('host' => 'emerald-nightmare.com', 'username' => 'mangos', 'password' => '1234abcd', ucfirst('character') => 'characters')));
+        $this->setWorldDb(new World_Database(array('host' => 'emerald-nightmare.com', 'username' => 'mangos', 'password' => '1234abcd', ucfirst('world') => 'mangos')));
         $this->setObjectId($this->getCharDb()->getGuidByName($name));
         $this->setObjectInfo($this->getCharDb()->getInfoFor($this->getObjectId()));
         $this->setStatInfo($this->getCharDb()->getStats($this->getObjectId())); //Add to get stats for armory

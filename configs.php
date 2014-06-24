@@ -71,11 +71,11 @@ require_once("/lang/en-gb.php");
 | 	$serverpass    = "Password";
 | 	$serverport	   = "Port";
 */
-$serveraddress = "nomtrees.com";
+$serveraddress = "emerald-nightmare.com";
 $serveruser    = "mangos";
 $serverpass    = "1234abcd";
 $serverport    = "3306";
-@define('DBHOST', 'nomtrees.com');
+@define('DBHOST', 'emerald-nightmare.com');
 @define('DBUSER', 'mangos');
 @define('DBPASS', '1234abcd');
 @define('DB', 'wowweb2');
@@ -126,7 +126,7 @@ $code = "f7c3bc1d808e04732adf679965ccc34ca7ae3441";
 |--------------------------------------------------------------------------
 |
 */
-$website['realm']     = "Set Realmlist nomtrees.com";
+$website['realm']     = "Set Realmlist emerald-nightmare.com";
 $name_realm1['realm'] = "Nightmare";
 $mysql_cod            = 'cp1251';
 
@@ -173,8 +173,8 @@ $comun_link['Reddit']   = "http://www.reddit.com/";
 $website['title']       = "Emerald Nightmare";
 $website['description'] = "Classic blizzlike server.";
 $website['keywords']    = "";
-$website['address']     = "http://localhost/";
-$website['root']        = "/emeraldnightmare/";
+$website['address']     = "http://emeraldnightmare.com";
+$website['root']        = "/";
 
 /*
 |--------------------------------------------------------------------------
