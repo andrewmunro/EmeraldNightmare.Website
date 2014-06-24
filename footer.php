@@ -1,3 +1,6 @@
+<?php
+require_once('functions.d/GetClientLink.php'); 
+?>
 <div class="wrapper">
 	<div id="footer">
 		<div id="sitemap" class="promotions">
