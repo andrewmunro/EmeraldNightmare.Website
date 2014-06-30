@@ -290,6 +290,9 @@
 
 div.mvp .post-user {  background-position:0 -137px; }
 div.blizzard .post-user { background-position:0 -272px;  }
+div.premium .post-user{ background-position:-255px -138px; }
+
+
 .post .blizzard-title { }
 .post .mvp-title { }
 

@@ -1,25 +1,26 @@
 html { min-width: 1006px; }
-body { background: #000 url("../images/layout/bg/body-bg-baked.jpg?v=2") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
+body { background: #000 url("../images/layout/bg/body-bg-baked.jpg") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
+
 
 @media (max-width: 1920px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1920px.jpg?v=2") }
+	body { background-image: url("../images/layout/bg/body-bg-baked-1920px.jpg") }
 }
 
-@media (max-width: 1680px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1680px.jpg?v=2") }
+/*@media (max-width: 1680px) {
+	body { background-image: url("../images/layout/bg/body-bg-baked-1680px.jpg") }
 }
 
 @media (max-width: 1440px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1440px.jpg?v=2") }
+	body { background-image: url("../images/layout/bg/body-bg-baked-1440px.jpg") }
 }
 
 @media (max-width: 1280px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1280px.jpg?v=2") }
+	body { background-image: url("../images/layout/bg/body-bg-baked-1280px.jpg") }
 }
 
 @media (max-width: 1024px) {
-  body { background-image: url("../images/layout/bg/body-bg-baked-1024px.jpg?v=2") }
-}
+  body { background-image: url("../images/layout/bg/body-bg-baked-1024px.jpg") }
+}*/
 
 
 a { color: #ffb100 }
@@ -28,7 +29,7 @@ a:hover { color: #FFF !important }
 #right a:hover { color: #FFF }
 
 /* tooltip */
-.ui-tooltip { border: 1px solid #353837; color: #fff; background-color: rgba(15, 15, 15, 0.9); padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: #000 0 0 15px; -webkit-box-shadow: #000 0 0 15px; box-shadow: #000 0 0 15px; font-size: 12px; max-width: 400px; }
+.ui-tooltip { border: 1px solid #353837; color: #fff; background-color: rgba(15, 15, 15, 0.9); padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: #000 0 0 15px; -webkit-box-shadow: #000 0 0 15px; box-shadow: #000 0 0 15px; font-size: 12px; }
 .ui-tooltip h3 { font-size: 16px; font-weight: normal; } /* title of the tooltip */
 .ui-tooltip li { clear: both; }
 .ui-tooltip a { color: white; }
@@ -78,14 +79,12 @@ tr:hover .fansite-link,
 .ui-typeahead .group-article .group-title { background-position: 5px -153px; }
 
 /* breadcrumbs */
-.ui-breadcrumb li { font-size:12px; margin-right:0; padding-right:0 }
-.ui-breadcrumb li a { border-color: #8c6407; float:left; height:16px }
+.ui-breadcrumb li { font-size:12px; background-position: 98% -118px; }
+.ui-breadcrumb li a { border-color: #8c6407; }
 .ui-breadcrumb li.last a { color:#FFF; font-weight:bold; }
 .ui-breadcrumb li.children a { border-color: #888; }
 .ui-breadcrumb li a:hover,
 .ui-breadcrumb li a.opened { color: #eee; border-color: #eee; }
-.ui-breadcrumb li .breadcrumb-arrow { display: block; float:left; background: url("../images/icons/flyout-arrows.gif") no-repeat 100% -123px; width: 15px; height: 10px; margin:5px 7px 0 8px }
-.ie6 .ui-breadcrumb li .breadcrumb-arrow { margin-right:3px }
 
 /* dropdown */
 .ui-dropdown { border: none; height: 27px; }
@@ -119,6 +118,8 @@ tr:hover .fansite-link,
 .ui-context .context .context-links .icon-ban { background-position: 0 -90px; }
 .ui-context .context .context-links .icon-auctions { background-position: 0 -120px; }
 .ui-context .context .context-links .icon-events { background-position: 0 -150px; }
+.ui-context .context .context-links .icon-avatar { background-position: 0 -180px; }
+.ui-context .context .context-links .icon-avatar .span{ margin-right: 5px !important;}
 .ui-context .context .realm,
 .ui-context .character-list .primary .char .realm { display: inline; padding-right: 15px; background: url("../images/icons/arrow-up-down.gif") 100% 2px no-repeat; }
 .ui-context .context .realm.down,
@@ -198,7 +199,7 @@ tr:hover .fansite-link,
 .flyout-menu ul li.divider { background-color: #060606; } /* separator */
 .flyout-menu ul li.divider a,
 .flyout-menu ul li.divider span { color: #EFE3D2; font-weight: bold; display: block; padding: 4px 8px; }
-.flyout-menu ul li a { color: #ffae00; padding: 4px 18px 4px 8px; }
+.flyout-menu ul li a { color: #ffae00; padding: 4px 8px; }
 .flyout-menu ul li a .desc { display: block; color: #7b7b7b; font-size: 11px; }
 .flyout-menu ul li .opened { color: #d5d5d5; }
 .flyout-menu ul li a.children,
@@ -228,9 +229,6 @@ tr:hover .fansite-link,
 .articles-list a .image { border: 1px solid #372511; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 15px #000; -webkit-box-shadow: 0 0 15px #000; box-shadow: 0 0 15px #000; }
 .articles-list a:hover .image { border-color: #CD9000; }
 
-/* under dev feed*/
-#sidebar-under-dev .trending-topics li { font-weight: bold; line-height: 100%; }
-
 /* layout */
 #wrapper { width: 1006px; margin: 0 auto; position: relative } /* use even width value so the centering is identical in IE and other browsers */
 
@@ -239,12 +237,12 @@ tr:hover .fansite-link,
 #header #logo { height: 115px }
 #header #logo a { width: 275px; height: 115px; display: block; border: none; text-indent: -9999px }
 #header .header-plate { height: 93px; position: relative; }
-#header .user-plate { color: #fff; width: 355px; height: 84px; position: absolute; right: 3px; bottom: 1px; }
-.ie6 #header .user-plate { right:2px }
+#header .user-plate { color: #fff; width: 355px; height: 140px; position: absolute; right: 4px; bottom: 0; }
+#header .user-plate .card-overlay { width: 343px; height: 15px; background: url("../images/layout/card-overlay.png"); position: absolute; bottom: 0; right: 5px; }
 
 #header .user-plate .character { position: relative; }
 #header .user-plate .player-name,
-#header .user-plate .guild-name { display: block; text-shadow: 1px 1px 1px black; font-weight: bold; font-size:12px; text-overflow: ellipsis; width: 250px; overflow: hidden; white-space: nowrap;}
+#header .user-plate .guild-name { display: block; text-shadow: 1px 1px 1px black; font-weight: bold; }
 #header .user-plate .context-link { text-shadow: 1px 1px 1px black; font-weight: bold; }
 #header .user-plate .player-name { color: #b0d715; font-weight: bold; line-height: 100%; margin-bottom: 2px; }
 #header .user-plate .character-name { line-height: 100%; font-weight: bold; font-size: 24px; margin: 0; padding: 0; background: none; letter-spacing: -0.0em; text-shadow: 1px 1px 1px black; letter-spacing: -0.05em; }
@@ -255,47 +253,31 @@ tr:hover .fansite-link,
 #header .user-plate .character-name .arrow { background: url("../images/layout/cms/char-arrow.png") 0 3px no-repeat; display: inline-block; width: 11px; height: 15px; }
 #header .user-plate .character-name:hover .arrow { background-position: 0 -145px; }
 
-#header .user-plate .card-character { width: 326px; height: 84px; padding:0 0 0 30px; display: block; color: #EEE; font-size: 14px; background: url("../images/layout/cards-mop/charcard-neutral.png") 0 0 no-repeat; position: absolute; bottom:-1px; right: 0; text-overflow: ellipsis; line-height: 1.4em; }
-#header .user-plate .card-character strong { color: #ffb100; }
-#header .user-plate .card-character .login-msg { display:block; float:left; width:210px; margin-top:18px;  text-shadow:1px 1px 1px #555 }
-#header .user-plate .card-character .wow-login-key { display:block; position:absolute; right:50px; top:31px; width:50px; height:42px; background:url(../images/layout/cards-mop/key.png) no-repeat }
-.ie6 #header .user-plate .card-character .wow-login-key { background-image:url(../images/layout/cards-mop/key.gif) }
-#header .user-plate a.card-character:hover { color: #fff; background-position: 0 -84px; }
-#header .user-plate a.card-character:hover strong { color: white; }
-#header .user-plate .card-character .card-portrait { width:58px; height:58px; display:block; float:right; border:1px solid #c3ff00; background:url(../images/layout/cards-mop/avatar-neutral.jpg) 50% 50% no-repeat; margin-top:7px; margin-right:21px }
-.ie6 #header .user-plate .card-character .card-portrait { margin-right:10px }
+#header .user-plate .card-login { width: 215px; height: 65px; padding: 32px 110px 0 30px; display: block; color: #EEE; font-size: 14px; background: url("../images/layout/cards/login.png") 0 0 no-repeat; position: absolute; bottom: 0; right: 0; text-overflow: ellipsis; line-height: 1.4em; }
+#header .user-plate .card-login strong { color: #ffb100; }
+#header .user-plate a.card-login:hover { color: #fff; /*background-position: 0 -97px; */}
+#header .user-plate a.card-login:hover strong { color: white; }
+#header .user-plate .card-nochars,
+#header .user-plate .card-default { width: 330px; height: 58px; padding: 25px 0 0 25px; background: url("../images/2d/card/no-chars.png") 0 0 no-repeat; position: absolute; bottom: 0; right: 0; }
+#header .user-plate .card-default { background: url("../images/layout/cards/default.jpg") 0 0 no-repeat; }
+#header .user-plate .card-default .icon-frame { position: absolute; right: 17px; bottom: 17px; }
+#header .user-plate .card-character { width: 353px; height: 178px; position: absolute; bottom: 0; right: 2px; }
+#header .user-plate .card-character .meta { position: absolute; top: 105px; left: 20px; }
 
-#header .user-plate .meta-wrapper { position:relative; width:240px; left:36px; top:10px }
-
-#header .user-plate .card-character.plate-neutral  .card-portrait,
-#header .user-plate .card-character.plate-alliance .card-portrait,
-#header .user-plate .card-character.plate-horde    .card-portrait { background-size:74px }
-
-#header .user-plate .card-character.plate-alliance { background-image:url(../images/layout/cards-mop/charcard-alliance.png) }
-#header .user-plate .card-character.plate-alliance .card-portrait { border-color:#00bbf6 }
-#header .user-plate .card-character.plate-alliance .profile-link:hover .card-portrait { border-color:#00c5f7 }
-
-#header .user-plate .card-character.plate-horde { background-image:url(../images/layout/cards-mop/charcard-horde.png) }
-#header .user-plate .card-character.plate-horde .card-portrait { border-color:#e23739 }
-#header .user-plate .card-character.plate-horde .profile-link:hover .card-portrait { border-color:#e63f41 }
-
-#header .user-plate .meta-default .meta { width:240px; margin-top:13px }
-
-#header .user-plate .meta-login-error .meta,
-#header .user-plate .meta-no-wow .meta { text-shadow:1px 1px 1px #555; width:280px; margin-top:7px }
-
-.pt-br #header .user-plate .meta-login-error .meta { width:280px }
-.es-mx #header .user-plate .meta-login-error .meta { width:280px }
-.es-mx #header .user-plate .meta-no-wow .meta { margin-top:13px }
-
-#header .user-plate .meta-alliance .player-name { color: #5fb8eb; }
-#header .user-plate .meta-alliance .character-name:hover { color: white; text-shadow: 1px 1px 1px black, 0 0 15px #409aff, 0 0 5px #409aff; }
-#header .user-plate .meta-horde .player-name { color: #eb1212; }
-#header .user-plate .meta-horde .character-name:hover { color: white; text-shadow: 1px 1px 1px black, 0 0 15px #c64040, 0 0 5px #c64040; }
+#header .user-plate .plate-alliance .player-name { color: #5fb8eb; }
+#header .user-plate .plate-alliance .character-name:hover { color: white; text-shadow: 1px 1px 1px black, 0 0 15px #409aff, 0 0 5px #409aff; }
+#header .user-plate .plate-horde .player-name { color: #eb1212; }
+#header .user-plate .plate-horde .character-name:hover { color: white; text-shadow: 1px 1px 1px black, 0 0 15px #c64040, 0 0 5px #c64040; }
 
 #header .user-plate .ui-context { top: 30px }
 #header .user-plate .ui-context a { color: #00B6FF; }
 #header .user-plate .ui-context a:hover { color: #fff; }
+#header .user-plate a.profile-link,
+#header .user-plate a.profile-link .hover { display: block; width: 200px; height: 125px; }
+#header .user-plate a.profile-link { position: absolute; bottom: 0; right: 2px; }
+#header .user-plate a.profile-link .hover { background: url("../images/layout/card-model-hover.png") no-repeat; opacity: 0; -webkit-transition: opacity 0.1s linear; -o-transition: all 0.1s linear; -moz-transition: opacity 0.1s linear; transition: opacity 0.1s linear; }
+#header .user-plate .plate-horde a.profile-link .hover { background-position: right top; }
+#header .user-plate a.profile-link:hover .hover { opacity: 1; }
 
 /* Sub header */
 #sub-header  { color:#7E3406; font-size:24px; letter-spacing:-0.05em; padding-left:30px; }
@@ -319,39 +301,38 @@ tr:hover .fansite-link,
 .search-bar form { float: right; width: 354px; height: 30px; }
 .search-bar div { position: relative; }
 .search-bar .input { width: 304px; padding: 8px 40px 8px 8px; background: #fff; }
-.search-bar .search-field { color: #707070; border-radius: 5px; box-shadow: 0 0 10px #4C7D82; }
+.search-bar .search-field { color: #707070;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    -moz-box-shadow: 0 0 10px #361005; -webkit-box-shadow: 0 0 10px #361005; box-shadow: 0 0 10px #361005; }
 .search-bar .search-field.active,
 .search-bar .search-field:focus { color: #000; font-weight: normal; }
 .search-bar .search-button { border:none; outline: none; position: absolute; top: -6px; right: -6px; cursor: pointer; background: url("../images/icons/mag-glass.png") center center no-repeat; width: 44px; height: 46px; z-index: 7; }
 
-/* search results */
-.search .summary .suggested-results .result a { font-weight: normal; }
-
 /* menu */
-#menu { width: 623px; height: 65px; position: absolute; left: 19px; top: 19px; -moz-user-select: none; -webkit-user-select: none; user-select: none; background-image: url("../images/layout/menu-tab-baked.jpg?v=2"); }
+#menu { width: 623px; height: 65px; position: absolute; left: 19px; top: 19px; -moz-user-select: none; -webkit-user-select: none; user-select: none }
 #menu li { width: 102px; float: left; height: 65px; }
 #menu li a { height: 65px; display: block; text-align: center; text-transform: uppercase; color: #ffa400 }
 #menu li a span { padding-top: 45px; display: block; font: normal 12px Arial, Verdana, serif; text-shadow: #000 0 0 5px; position: relative; top: -5px }
 #menu li a:hover,
-#menu li a.menu-active { background-image: url("../images/layout/menu-tab-baked.jpg?v=2"); }
+#menu li a.menu-active { background-image: url("../images/layout/menu-tab-baked.jpg"); }
 #menu li a:hover { color: white; }
 #menu li a.menu-active { color: #fff !important; -moz-box-shadow: 0 0 15px #ff7501; -webkit-box-shadow: 0 0 15px #ff7501; box-shadow: 0 0 15px #ff7501; position: relative; }
 #menu li.menu-game,
 #menu li.menu-forums { width: 104px }
 #menu li.menu-community,
 #menu li.menu-media { width: 105px }
-#menu li.menu-home a:hover { background-position: 0 -65px }
-#menu li.menu-home a.menu-active { background-position: 0 -130px !important }
-#menu li.menu-game a:hover { background-position: -102px -65px }
-#menu li.menu-game a.menu-active { background-position: -102px -130px !important }
-#menu li.menu-community a:hover { background-position: -206px -65px }
-#menu li.menu-community a.menu-active { background-position: -206px -130px !important }
-#menu li.menu-media a:hover { background-position: -311px -65px }
-#menu li.menu-media a.menu-active { background-position: -311px -130px !important }
-#menu li.menu-forums a:hover { background-position: -416px -65px }
-#menu li.menu-forums a.menu-active { background-position: -416px -130px !important }
-#menu li.menu-services a:hover { background-position: -520px -65px }
-#menu li.menu-services a.menu-active { background-position: -520px -130px !important }
+#menu li.menu-home a:hover { background-position: 0 0 }
+#menu li.menu-home a.menu-active { background-position: 0 -65px !important }
+#menu li.menu-game a:hover { background-position: -102px 0 }
+#menu li.menu-game a.menu-active { background-position: -102px -65px !important }
+#menu li.menu-community a:hover { background-position: -206px 0 }
+#menu li.menu-community a.menu-active { background-position: -206px -65px !important }
+#menu li.menu-media a:hover { background-position: -311px 0 }
+#menu li.menu-media a.menu-active { background-position: -311px -65px !important }
+#menu li.menu-forums a:hover { background-position: -416px 0 }
+#menu li.menu-forums a.menu-active { background-position: -416px -65px !important }
+#menu li.menu-services a:hover { background-position: -520px 0 }
+#menu li.menu-services a.menu-active { background-position: -520px -65px !important }
 .chrome #menu li a span { text-shadow: none; }
 
 /* content */
@@ -458,7 +439,7 @@ tr:hover .fansite-link,
 	.table tbody tr:hover td,
 	.table tbody tr.row-active td { background: #180c04; color: #fff }
 	.table tbody tr.no-results td { padding: 25px 50px; text-align: center; background: #231207; color: #C09A67 }
-	.table tbody tr.disabled td { opacity: 0.33333; }
+	.table tbody tr.disabled { opacity: 0.33333; }
 	.table.full-width td:first-child { padding-left: 20px; }
 	.table.full-width td:last-child { padding-right: 20px; }
 
@@ -563,15 +544,13 @@ tr:hover .fansite-link,
 	.color-c7,  .color-c7 a { color: #2359ff !important; } /* shaman */
 	.color-c8,  .color-c8 a, .color-g3 { color: #68ccef !important; } /* mage */
 	.color-c9,  .color-c9 a { color: #9382c9 !important; } /* warlock */
-	.color-c10, .color-c10 a { color: #00ffba !important; } /* monk */
 	.color-c11, .color-c11 a, .color-g4 { color: #ff7c0a !important; } /* druid */
 
 	/* expansion */
-	.color-ex0, .color-exp0 { color: #fff468 !important; } /* classic */
-	.color-ex1, .color-exp1 { color: #aad372 !important; } /* the burning crusade */
-	.color-ex2, .color-exp2 { color: #68ccef !important; } /* wrath of the lich king */
-	.color-ex3, .color-exp3 { color: #ff7c0a !important; } /* cataclysm */
-	.color-ex4, .color-exp4 { color: #00ffba !important; } /* Mists of Pandaria */
+	.color-exp0 { color: #fff468 !important; } /* classic */
+	.color-exp1 { color: #aad372 !important; } /* the burning crusade */
+	.color-exp2 { color: #68ccef !important; } /* wrath of the lich king */
+	.color-exp3 { color: #ff7c0a !important; } /* cataclysm */
 
 	/* 50% opaque dotted underlines for links with a tooltip */
 	.color-c1  a.tip { border-bottom: 1px dotted #634e37; }
@@ -604,6 +583,12 @@ tr:hover .fansite-link,
 	.color-d5, .color-d5 a { color: #88aaff !important; } /* light blue */
 	.color-d6, .color-d6 a { color: #ff0000 !important; } /* red */
 
+	/* expansion */
+	.color-ex0 { color: #f7ad01 !important; }
+	.color-ex1 { color: #5b9b17 !important; }
+	.color-ex2 { color: #2588c0 !important; }
+	.color-ex3 { color: #DD6800 !important; }
+
 	/* skill difficulty */
 	.color-s0 { color: red; }
 	.color-s1 { color: #FF8040; }
@@ -614,8 +599,8 @@ tr:hover .fansite-link,
 	/* link hover color for the above */
 	a.color-q0:hover, a.color-q1:hover, a.color-q2:hover, a.color-q3:hover, a.color-q4:hover, a.color-q5:hover, a.color-q6:hover, a.color-q7:hover,
 	.color-q0 a:hover, .color-q1 a:hover, .color-q2 a:hover, .color-q3 a:hover, .color-q4 a:hover, .color-q5 a:hover, .color-q6 a:hover, .color-q7 a:hover,
-	a.color-c1:hover, a.color-c2:hover, a.color-c3:hover, a.color-c4:hover, a.color-c5:hover, a.color-c6:hover, a.color-c7:hover, a.color-c8:hover, a.color-c9:hover, a.color-c10:hover, a.color-c11:hover,
-	.color-c1 a:hover, .color-c2 a:hover, .color-c3 a:hover, .color-c4 a:hover, .color-c5 a:hover, .color-c6 a:hover, .color-c7 a:hover, .color-c8 a:hover, .color-c9 a:hover, .color-c10 a:hover, .color-c11 a:hover,
+	a.color-c1:hover, a.color-c2:hover, a.color-c3:hover, a.color-c4:hover, a.color-c5:hover, a.color-c6:hover, a.color-c7:hover, a.color-c8:hover, a.color-c9:hover, a.color-c11:hover,
+	.color-c1 a:hover, .color-c2 a:hover, .color-c3 a:hover, .color-c4 a:hover, .color-c5 a:hover, .color-c6 a:hover, .color-c7 a:hover, .color-c8 a:hover, .color-c9 a:hover, .color-c11 a:hover,
 	a.color-d1:hover, a.color-d2:hover, a.color-d3:hover, a.color-d4:hover, a.color-d5:hover, a.color-d6:hover,
 	.color-d1 a:hover, .color-d2 a:hover, .color-d3 a:hover, .color-d4 a:hover, .color-d5 a:hover, .color-d6 a:hover
 	{ color: #fff !important }
@@ -653,19 +638,17 @@ tr:hover .fansite-link,
 
 /* reusable icons */
 .icon-wowhead	{ padding-left: 20px; background: url("../images/icons/wowhead.png") left center no-repeat; }
-.icon-gold		{ padding-right: 15px; background: url("../images/icons/gold.gif") right center no-repeat; }
-.icon-silver	{ padding-right: 15px; padding-left: 3px; background: url("../images/icons/silver.gif") right center no-repeat; }
-.icon-copper	{ padding-right: 15px; padding-left: 3px; background: url("../images/icons/copper.gif") right center no-repeat; }
+.icon-gold		{ padding-right: 15px; background: url("http://www.dalaran-wow.com/wow/static/images/icons/gold.gif") right center no-repeat; }
+.icon-silver	{ padding-right: 15px; padding-left: 3px; background: url("http://www.dalaran-wow.com/wow/static/images/icons/silver.gif") right center no-repeat; }
+.icon-copper	{ padding-right: 15px; padding-left: 3px; background: url("http://www.dalaran-wow.com/wow/static/images/icons/copper.gif") right center no-repeat; }
 .icon-rss       { background: url("../images/icons/rss.gif") left center no-repeat; }
 .icon-next      { background: url("../images/icons/next.gif") 0 0 no-repeat; }
 .icon-next:hover{ background-position:0 -18px; }
 .icon-dps,
-.icon-healing,
 .icon-healer,
 .icon-tank { float: right; width: 16px; height: 16px; background: url("../images/icons/roles.png") no-repeat; }
 .icon-dps    { background-position: 0 0; }
-.icon-healer,
-.icon-healing { background-position: -16px 0; }
+.icon-healer { background-position: -16px 0; }
 .icon-tank   { background-position: -32px 0; }
 .icon-heroic-skull { height: 12px; width: 10px; display: inline-block; background: url("../images/icons/heroic.gif") 50% 50% no-repeat; margin-left: 5px; }
 .icon-daily-quest { padding-left: 10px; background: url("../images/icons/daily.gif") 0 50% no-repeat; margin-left: 6px; }
@@ -673,6 +656,9 @@ tr:hover .fansite-link,
 .icon-faction-1 { height: 15px; width: 15px; display: inline-block; vertical-align: middle; margin-left: 6px; background: url("../images/icons/alliance.png") left center no-repeat; }
 .icon-faction-1 { background: url("../images/icons/horde.png") left center no-repeat; }
 .icon-achievement-points { padding-left: 11px; background: url(../images/icons/achievements.gif) left center no-repeat; margin-left: 4px; }
+.icon-no-message, .icon-message{inline-block; margin-left: 5px; margin-right: 15px !important;padding-right: 15px; padding-left: 5px;}
+.icon-no-message {background: url("http://www.dalaran-wow.com/wow/static/images/icons/messages_noread.png") right center no-repeat;}
+.icon-message{background: url("http://www.dalaran-wow.com/wow/static/images/icons/messages.png") right center no-repeat;}
 
 /* framed icons */
 .icon-frame { display: inline-block; overflow: hidden; padding: 1px; background-color: #000; background-position: 1px 1px; background-repeat: no-repeat; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #434445; border-bottom-color: #2f3032; border-top-color: #b1b2b4; }
@@ -702,7 +688,7 @@ tr:hover .fansite-link,
 .icon-socket.socket-4  .empty { background-color: #403010; } /* Yellow */
 .icon-socket.socket-8  .empty { background-color: #102040; } /* Blue */
 .icon-socket.socket-14 .empty { background-color: #29292a; } /* Prismatic */
-.icon-socket.socket-16 .empty { background-color: #000; }     /* Sha-touched */
+.icon-socket.socket-16 .empty { background-color: red; }     /* Hydraulic */
 .icon-socket.socket-32 .empty { background-color: #29292a; } /* Cogwheel */
 .icon-socket.socket-1  .frame { background-position:  -45px   0; } /* Meta */
 .icon-socket.socket-2  .frame { background-position:      0   0; } /* Red */
@@ -712,7 +698,7 @@ tr:hover .fansite-link,
 .icon-socket.socket-10 .frame { background-position:  -75px   0; } /* Purple */
 .icon-socket.socket-12 .frame { background-position: -105px   0; } /* Green */
 .icon-socket.socket-14 .frame { background-position:  -60px   0; } /* Prismatic */
-.icon-socket.socket-16 .frame { background-position: -120px   0; } /* Sha-touched */
+.icon-socket.socket-16 .frame { background-position:      0   0; } /* Hydraulic */
 .icon-socket.socket-32 .frame { background-position:  -45px   0; } /* Cogwheel */
 
 /* tooltips */
@@ -737,13 +723,14 @@ tr:hover .fansite-link,
 .item-specs .transmog-name { color:#ff80ff }
 
 .character-tooltip .character-achievementpoints { margin-top: 4px; }
-.character-tooltip .character-spec { margin-top: 10px; }
+.character-tooltip .character-talents { margin-top: 10px; }
 
-.character-spec { display: block; }
-.character-spec .icon,
-.character-spec .name { float: left; height: 14px; line-height: 15px; }
-.character-spec .icon { margin-right: 5px; }
-.character-spec .name { color: #F5EBD1; }
+.character-talents { display: block; }
+.character-talents .icon,
+.character-talents .points { float: left; height: 14px; line-height: 15px; }
+.character-talents .icon { margin-right: 5px; }
+.character-talents .points { color: #F5EBD1; }
+.character-talents .points ins { color: #808080; padding: 0 2px; font-weight: normal; text-decoration: none; }
 
 .character-achievementpoints { display: block; float: left; padding-right: 11px; background: url(../images/icons/achievements.gif) no-repeat right center; }
 
@@ -794,7 +781,6 @@ tr:hover .fansite-link,
 .activity-feed li.bosskill .icon       	{ background-position: -20px 0; }
 .activity-feed li.guild-levelup .icon,
 .activity-feed li.guild-created .icon 	{ background-position: -40px 0; }
-.activity-feed a.account { color: #00aeff; }
 
 /* class icons */
 .class-icon-56 { display:block; width:56px; height:56px; background:url(../images/icons/class/classes-56.jpg) no-repeat; padding:0 }
@@ -903,12 +889,28 @@ tr:hover .fansite-link,
 	.model-viewer .buttons a.button-active { background-position: 100% 0; }
 
 /* new feature tip */
-.new-feature-tip { width: 400px; height: 150px; position: absolute; left: 94px; top: 212px; z-index: 50; }
-.new-feature-tip .clickable { display: block; background: url("../images/layout/feature-tip/game-guide-scenarios.png") 0 0 no-repeat; line-height: 100%; }
-.new-feature-tip .clickable { height: 112px; padding: 38px 170px 0 25px; }
+.new-feature-tip { width: 400px; height: 150px; position: absolute; left: 92px; top: 205px; z-index: 50; }
+.new-feature-tip .clickable { display: block; background: url("../images/layout/feature-tip/mop-talent-calculator.png") 0 0 no-repeat; line-height: 100%; }
+.new-feature-tip .clickable { height: 112px; padding: 33px 200px 0 25px; }
 .new-feature-tip .clickable:hover { background-position: 0 -150px; }
-.new-feature-tip .clickable .title { color: #30c4ab; text-transform: uppercase; font-size: 11px; }
-.new-feature-tip .clickable .desc { color: #f1b765; line-height: 1.333em; font-size: 11px; }
-.new-feature-tip .clickable strong { color: #fff; display: block; padding-bottom: 4px; font: bold 19px/115% "Palatino Linotype", "Georgia", "Times", serif; }
-.new-feature-tip .close { width: 20px; height: 21px; position: absolute; top: 28px; right: 18px; background-position: 0 100%; }
-.new-feature-tip .close:hover { background: url("../images/layout/feature-tip/game-guide-scenarios.png") 100% 100% no-repeat; }
+.new-feature-tip .clickable .title { color: #30c4ab; text-transform: uppercase; font-size: 10px; }
+.new-feature-tip .clickable .desc { color: #f1b765; line-height: 1.333em; }
+.new-feature-tip .clickable strong { color: #fff; display: block; padding-bottom: 4px; font: bold 20px/115% "Palatino Linotype", "Georgia", "Times", serif; }
+.new-feature-tip .close { width: 20px; height: 21px; position: absolute; top: 27px; right: 18px; background-position: 0 100%; }
+.new-feature-tip .close:hover { background: url("../images/layout/feature-tip/mop-talent-calculator.png") 100% 100% no-repeat; }
+
+
+#char_select{
+float: right;
+position: relative;
+}
+
+
+#char_select select{
+border: 1px solid;
+white-space: pre;
+height: 25px;
+cursor: default;
+color: #5a5a5a;
+font: normal 14px/26px "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+}

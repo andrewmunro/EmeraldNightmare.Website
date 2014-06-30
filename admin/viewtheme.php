@@ -90,8 +90,8 @@ echo $description;
 $preview_image="../wow/static/Themes/".$CSS_Link."/preview.png";
 if (file_exists($preview_image)) {
 
-echo '<img src="../wow/static/Themes/'.$CSS_Link.'/preview.png" width="400px"><br />
-		<a href="../wow/static/Themes/'.$CSS_Link.'/preview.png" class="lytebox" data-title"Preview">Click To Enlarge</a>
+echo '<img src="../wow/static//preview.png" width="400px"><br />
+		<a href="../wow/static//preview.png" class="lytebox" data-title"Preview">Click To Enlarge</a>
               </div>';
 
 
