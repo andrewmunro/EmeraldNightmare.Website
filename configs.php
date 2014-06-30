@@ -70,11 +70,11 @@ $_SESSION['Local'] = $language;
 | 	$serverpass    = "Password";
 | 	$serverport	   = "Port";
 */
-$serveraddress = "emerald-nightmare.com";
+$serveraddress = "play.emerald-nightmare.com";
 $serveruser    = "mangos";
 $serverpass    = "1234abcd";
 $serverport    = "3306";
-@define('DBHOST', 'emerald-nightmare.com');
+@define('DBHOST', 'play.emerald-nightmare.com');
 @define('DBUSER', 'mangos');
 @define('DBPASS', '1234abcd');
 @define('DB', 'wowweb2');
@@ -125,7 +125,7 @@ $code = "f7c3bc1d808e04732adf679965ccc34ca7ae3441";
 |--------------------------------------------------------------------------
 |
 */
-$website['realm']     = "Set Realmlist emerald-nightmare.com";
+$website['realm']     = "Set Realmlist play.emerald-nightmare.com";
 $name_realm1['realm'] = "Nightmare";
 $mysql_cod            = 'cp1251';
 
