@@ -107,6 +107,8 @@ function changeType(num) {
 <?php
 if (isset($_POST['send'])){ 
 
+  $error = false;
+
   $title = mysql_real_escape_string($_POST['title_form']); 
   $description = mysql_real_escape_string($_POST['description_form']);
   //types: 0 videos, 1 wallpapers, 2 screenshots, 3 artwork, 4 comic

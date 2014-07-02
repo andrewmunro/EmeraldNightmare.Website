@@ -52,9 +52,7 @@ try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
 <div id="page-content" class="page-content">
 <div class="service-wrapper">
     <p class="service-nav">
-        <a href=""><?php echo $Vote['Vote2']; ?></a>
         <a href="vote-history.php" class="active"><?php echo $Vote['Vote3']; ?></a>
-        <a href=""><?php echo $Vote['Vote4']; ?></a>
         <a href="vote.php"><?php echo $Vote['Vote5']; ?></a>
     </p>
 </div>
@@ -63,7 +61,7 @@ try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
     $orderby = "DESC";
     $link = "vote-history.php?date=asc";
     if(isset($_GET['date'])) if($_GET['date'] == "desc"){ $orderby = "DESC"; $link = "vote-history.php?date=asc"; }else{ $orderby = "ASC"; $link = "vote-history.php?date=desc";}
-    $sql = mysql_query("SELECT * FROM votes_log WHERE userid = '".$account_information['id']."' ORDER BY `date` ".$orderby." LIMIT 50") or die(mysql_error());
+    $sql = mysql_query("SELECT * FROM $server_db.votes_log WHERE userid = '".$account_information['id']."' ORDER BY `date` ".$orderby." LIMIT 50") or die(mysql_error());
     $numrows = mysql_num_rows($sql);
 
     if($numrows > 0){
@@ -92,28 +90,6 @@ try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
                     <td valign="top" class="align-center" data-raw="20"><strong data-service-id="null">'.substr($raw['date'],11,8).'</strong></td>
                     <td valign="top" class="align-center">1 VP Earned</td>
                     <td valign="top" class="align-center" data-raw="20">'.$vote['Name'].'</td>
-                </tr>
-                </tbody>';
-            }
-        echo "</table><br />";
-   } else echo '<b>'.$Vote['Vote9'].'</b>';
-   
-   if($numrows > 0){
-        echo '
-        <span class="clear"></span>
-        ';
-            
-            while($raw = mysql_fetch_array($sql)){
-                echo '
-                <tbody>
-                <tr class="parent-row">
-                    <td valign="top" class="align-center" data-raw="20"><span class="icon-frame frame-14 " data-tooltip="'.$account_extra['firstName'].'"><a href="">'.$account_extra['id'].'</a></span></td>
-                    <td valign="top" class="align-center" data-raw="20"><a href="http://www.wowhead.com/item='.$raw['ItemID_took'].'">'.$raw['ItemID_took'].'</a></td>
-                    <td valign="top" class="align-center" data-raw="20"><span><time datetime="2011-07-02T18:25+00:00">'.$raw['Vote_Date'].'</time></span></td>
-                    <td valign="top" class="align-center" data-raw="20"><strong data-service-id="null">'.$raw['Vote_Hour'].'</strong></td>
-                    <td valign="top" class="align-center">'.$raw['Costs'].' VP</td>
-                    <td valign="top" class="align-center">'.$raw['Points'].'</td>
-                    <td valign="top" class="align-center" data-raw="20">'.$raw['Link'].'</td>
                 </tr>
                 </tbody>';
             }

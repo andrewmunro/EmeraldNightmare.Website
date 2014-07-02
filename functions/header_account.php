@@ -84,12 +84,9 @@ while($get = mysql_fetch_array($points))
 </a>
 <div class="flyout-menu" id="accountBalance-menu">
 <ul>
-<li class=" first nonBeta"><a href="<?php echo $website['root']; ?>account/sms.php">Add Funds</a></li>
-<li class=" "><a href="#">Add Pre-Paid Card</a></li>
-<li class=" line "><a href="#">Balance History</a></li>
-<li class="line"><a href="#" onclick="$('#account-balance-dialog').dialog('open'); return false;">Other Currencies</a></li>
-<li class="line"><a href="#">Balance Help</a></li>
-<li id="refreshBalance"><a href="#" onclick="accountBalance.refreshBalance(); return false;">Refresh Balance</a></li>
+<li class=" first nonBeta"><a href="<?php echo $website['root']; ?>account/donation_panel.php">Donate</a></li>
+<li class=" "><a href="<?php echo $website['root']; ?>account/vote.php">Vote</a></li>
+<li class=" "><a href="<?php echo $website['root']; ?>account/vote-history.php">Vote History</a></li>
 <!--<li class="refreshing" id="refreshingBalance"><a href="#" onclick="return false;"><img src="/account/static/images/icons/loader.gif" alt="" height="11" width="16" />Refreshing…</a></li>-->
 </ul>
 </div>

@@ -87,7 +87,7 @@ $or['or']             = "or";
 $search['text_bar']   = "Search characters, items and more&#8230;";
 
 // Starting the voting translation
-$Vote['Vote']       = "Vote System &amp; Simple";
+$Vote['Vote']       = "Vote System";
 $Vote['Vote1']      = "Vote System for ";
 $Vote['Vote2']      = "Spend Points";
 $Vote['Vote3']      = "History";
@@ -97,7 +97,7 @@ $Vote['Vote6']      = "After you vote you need to wait atleast 12 hours to reset
 $Vote2['Vote6']     = " will not return any Points back..";
 $Vote['Vote7']      = "Vote/Reward History";
 $Vote['Vote8']      = "Your Vote and Reward History";
-$Vote['Vote9']      = "There are no logs from your actions right now.";
+$Vote['Vote9']      = "You have not voted recently.";
 $Vote['Vote10']     = "Account ID";
 $Vote['Vote11']     = "Item ID";
 $Vote['Vote12']     = "Date";
@@ -302,9 +302,9 @@ $Man['Man18']  = "World of Warcraft";
 $Man['Man19']  = "Change";
 $Man['Man20']  = "Region";
 $Man['Man21']  = "Europe (EU)";
-$Man['Man22']  = " Donator";
+$Man['Man22']  = " Premium";
 $Man['Man23']  = "Unsubscribed";
-$Man['Man24']  = "Donate / Buy Subscription";
+$Man['Man24']  = "Donate / Buy Premium";
 $Man['Man25']  = "Vote and Get Rewarded";
 $Man['Man26']  = "Change your Password";
 $Man['Man27']  = "View Account History";
@@ -342,7 +342,7 @@ $Man['Man58']  = "Earn in-game rewards, and more by recruiting your friends, bri
 $Man['Man59']  = "Refer a Friend";
 $Man['Man60']  = "Get more Friends, to ";
 $Man['Man61']  = ", to enjoy the Ultimate Gaming.";
-$Man['Man62']  = "Donate Subscription";
+$Man['Man62']  = "Premium Subscription";
 $Man['Man63']  = "Add ";
 $Man['Man64']  = " Donation Title to your account and unlock illuminative Rewards.";
 $Man['Man65']  = " Remote";
@@ -1179,7 +1179,7 @@ $race['8'] = "Cancel";
 
 //Donation Panel
 $donar['1']  = " - Donation Panel";
-$donar['2']  = "Donation SYSTEM & SIMPLE";
+$donar['2']  = "Donation System";
 $donar['3']  = "Donation Panel";
 $donar['4']  = "Donate Via SMS";
 $donar['5']  = "Donate via SMS and receive great rewards";

@@ -205,9 +205,6 @@ $expansion_info = mysql_query("SELECT id,username,expansion  FROM `".$server_adb
 	  
 	elseif($getexpansion['expansion'] == 4)
 		$expansiontype = 'Mist Of Pandaria';
-	  
-	if($getexpansion['expansion'] != 4)	
-		$upgradeaval = '<font color="green">Upgrade available!</font>';
 	
  }
 ?>
@@ -215,19 +212,19 @@ $expansion_info = mysql_query("SELECT id,username,expansion  FROM `".$server_adb
 <dd class="account primary-account"><span class="account-history"><font color="#D16000"><?php echo $expansiontype; ?></font>&nbsp;<?php echo $upgradeaval?></span>
 
 <dd class="account secondary-account"><font color="#0072A3">Mist Of Pandaria</font>
-<em><a href="change_client.php?client=4"><li><?php echo $Man['Man13']; ?></li></a></em></dd>
+<em><a ><li><?php echo $Man['Man13']; ?></li></a></em></dd>
 
 <dd class="account secondary-account"><font color="#0072A3"><?php echo $Man['Man12']; ?></font>
-<em><a href="change_client.php?client=3"><li><?php echo $Man['Man13']; ?></li></a></em></dd>
+<em><a ><li><?php echo $Man['Man13']; ?></li></a></em></dd>
 
 <dd class="account secondary-account"><font color="#0072A3"><?php echo $Man['Man14']; ?></font>
-<em><a href="change_client.php?client=2"><li><?php echo $Man['Man15']; ?></li></a></em></dd>
+<em><a ><li><?php echo $Man['Man15']; ?></li></a></em></dd>
 
 <dd class="account secondary-account"><font color="#138701"><?php echo $Man['Man16']; ?></font>
-<em><a href="change_client.php?client=1"><li><?php echo $Man['Man17']; ?></li></a></em></dd>
+<em><a ><li><?php echo $Man['Man17']; ?></li></a></em></dd>
 
 <dd class="account secondary-account oldest-account"><font color="#5B4325"><?php echo $Man['Man18']; ?></font>
-<em><a href="change_client.php?client=0"><li><?php echo $Man['Man19']; ?></li></a></em></dd>
+<em><a ><li><?php echo $Man['Man19']; ?></li></a></em></dd>
 
 <dt class="subcategory"><?php echo $Man['Man20']; ?></dt>
 <dd class="region eu"><?php echo $Man['Man21']; ?></dd>
@@ -238,19 +235,13 @@ $expansion_info = mysql_query("SELECT id,username,expansion  FROM `".$server_adb
 <div class="section available-actions">
 <ul class="game-time">
 <li class="change-payment-method">
-<a href="<?php echo $website['root']; ?>account/"><?php echo $Man['Man24']; ?></a>
+<a href="<?php echo $website['root']; ?>account/donation_panel.php"><?php echo $Man['Man24']; ?></a>
 </li>
 <li class="change-payment-method">
 <a href="<?php echo $website['root']; ?>account/vote.php"><?php echo $Man['Man25']; ?></a>
 </li>
 <li class="add-game-card">
 <a href="<?php echo $website['root']; ?>account/change-password.php"><?php echo $Man['Man26']; ?></a>
-</li>
-<li class="payment-history">
-<a href="<?php echo $website['root']; ?>account/"><?php echo $Man['Man27']; ?></a>
-</li>
-<li class="download-guide">
-<a href="<?php echo $website['root']; ?>account/game_client.php"><?php echo $Man['Man28']; ?></a>
 </li>
 <li class="download-client">
 <a href="<?php echo $website['root']; ?>account/game_client.php"><?php echo $Man['Man29']; ?></a>
@@ -302,13 +293,6 @@ tabindex="1">
 <div class="position"></div>
 <div class="content character-services" id="character-services">
 <ul>
-<li class="wow-service pct">
-<a href="">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $Man['Man38']; ?></strong>
-<?php echo $Man['Man39']; ?>
-</a>
-</li>
 <li class="wow-service pfc">
 <a href="<?php echo $website['root']; ?>account/change_faction.php">
 <span class="icon glow-shadow-3"></span>
@@ -321,13 +305,6 @@ tabindex="1">
 <span class="icon glow-shadow-3"></span>
 <strong><?php echo $Man['Man42']; ?></strong>
 <?php echo $Man['Man43']; ?>
-</a>
-</li>
-<li class="wow-service pnc">
-<a href="<?php echo $website['root']; ?>account/name.php">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $Man['Man79']; ?></strong>
-<?php echo $Man['Man80']; ?>
 </a>
 </li>
 <li class="wow-service pnc">
@@ -362,36 +339,15 @@ tabindex="1">
 <?php echo $Man['Man51']; ?><?php echo $website['title']; ?> <?php echo $Man['Man52']; ?>
 </a>
 </li>
-<li class="wow-service arena-tournament-closed">
-<a href="" onclick="return Core.open(this);">
-<span class="icon glow-shadow-3 disabled"></span>
-<strong><?php echo $Man['Man53']; ?></strong>
-<?php echo $Man['Man54']; ?>
-</a>
-</li>
-<li class="wow-service parental-controls">
-<a href="">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $Man['Man55']; ?></strong>
-<?php echo $Man['Man56']; ?>
-</a>
-</li>
 </ul>
 </div>
 <div class="content referrals-rewards" id="referrals-rewards">
 <ul>
 <li class="wow-service raf">
-<a href="">
+<a href="raf-invite.php">
 <span class="icon glow-shadow-3"></span>
 <strong><?php echo $Man['Man57']; ?></strong>
-<?php echo $Man['Man58']; ?>
-</a>
-</li>
-<li class="wow-service resurrection-scroll">
-<a href="<?php echo $website['root']; ?>account/raf-invite.php">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $Man['Man59']; ?></strong>
-<?php echo $Man['Man60']; ?><?php echo $website['title']; ?><?php echo $Man['Man61']; ?>
+<?php echo $Man['Man57']; ?>
 </a>
 </li>
 </ul>
@@ -399,17 +355,10 @@ tabindex="1">
 <div class="content game-time-subscriptions" id="game-time-subscriptions">
 <ul>
 <li class="wow-service add-game-card">
-<a href="">
+<a href="donation_panel.php">
 <span class="icon glow-shadow-3"></span>
 <strong><?php echo $Man['Man62']; ?></strong>
 <?php echo $Man['Man63']; ?><?php echo $website['title']; ?><?php echo $Man['Man64']; ?>
-</a>
-</li>
-<li class="wow-service wow-anywhere">
-<a href="">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $website['title']; ?><?php echo $Man['Man65']; ?></strong>
-<?php echo $Man['Man66']; ?><?php echo $website['title']; ?>.
 </a>
 </li>
 </ul>

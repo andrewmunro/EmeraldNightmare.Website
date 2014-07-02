@@ -88,11 +88,10 @@ _gaq.push(['_trackPageLoadTime']);
 <tbody>
 <tr class="full wow localized" id="wow-full-EU">
 <th scope="row" colspan="2" class="details">
-<h4>Full Game Client</h4>
+<h4>Download using Bittorrent</h4>
 <p class="language-selection">
 <span class="active-region">Europe</span> /
 <span class="active-language">English (EU)</span>
-<a href="" class="change-language" rel="region-wow-full">(Change)</a>
 </p>
 <div id="region-wow-full" class="region-selection hidden border-3">
 <p><strong>Available Regions</strong></p>
@@ -142,35 +141,34 @@ _gaq.push(['_trackPageLoadTime']);
 </div>
 </th>
 <td class="download win">
-<a href="" class="link hidden" id="win-wow-full-NA-en_US"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-NA-es_MX"><span class="icon"></span> Windows</a>
-<a href="" class="link" id="win-wow-full-EU-en_GB"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-EU-es_ES"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-EU-de_DE"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-EU-fr_FR"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-EU-ru_RU"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-KR-ko_KR"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-full-TW-zh_TW"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-NA-en_US"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-NA-es_MX"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link" id="win-wow-full-EU-en_GB"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-EU-es_ES"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-EU-de_DE"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-EU-fr_FR"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-EU-ru_RU"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-KR-ko_KR"><span class="icon"></span> Windows</a>
+<a href="magnet:?xt=urn:btih:401b18ebefb5ea011cd91f875b70f07b15f4f573&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Windows+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="win-wow-full-TW-zh_TW"><span class="icon"></span> Windows</a>
 </td>
 <td class="download mac">
-<a href="" class="link hidden" id="mac-wow-full-NA-en_US"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-NA-es_MX"><span class="icon"></span> Mac</a>
-<a href="" class="link" id="mac-wow-full-EU-en_GB"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-EU-es_ES"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-EU-de_DE"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-EU-fr_FR"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-EU-ru_RU"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-KR-ko_KR"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-full-TW-zh_TW"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-NA-en_US"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-NA-es_MX"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link" id="mac-wow-full-EU-en_GB"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-EU-es_ES"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-EU-de_DE"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-EU-fr_FR"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-EU-ru_RU"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-KR-ko_KR"><span class="icon"></span> Mac</a>
+<a href="magnet:?xt=urn:btih:acb3ca6995806f32ac0798480e586ef4737c3ea1&dn=[Emerald+Nightmare]World+of+Warcraft+1.12.1+Vanilla+-+Mac+ENGLISH&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337" class="link hidden" id="mac-wow-full-TW-zh_TW"><span class="icon"></span> Mac</a>
 </td>
 </tr>
 <tr class="beta wow localized" id="wow-beta-EU">
 <th scope="row" colspan="2" class="details">
-<h4>Public Test Realm Client</h4>
+<h4>Download using Browser - Coming Soon</h4>
 <p class="language-selection">
 <span class="active-region">Europe</span> /
 <span class="active-language">English (EU)</span>
-<a href="" class="change-language" rel="region-wow-beta">(Change)</a>
 </p>
 <div id="region-wow-beta" class="region-selection hidden border-3">
 <p><strong>Available Regions</strong></p>
@@ -206,159 +204,25 @@ _gaq.push(['_trackPageLoadTime']);
 </div>
 </th>
 <td class="download win">
-<a href="" class="link hidden" id="win-wow-beta-NA-en_US"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-NA-es_MX"><span class="icon"></span> Windows</a>
-<a href="" class="link" id="win-wow-beta-EU-en_GB"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-EU-es_ES"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-EU-de_DE"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-EU-fr_FR"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-EU-ru_RU"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-beta-KR-ko_KR"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-NA-en_US"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-NA-es_MX"><span class="icon"></span> Windows</a>
+<a class="link" id="win-wow-beta-EU-en_GB"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-EU-es_ES"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-EU-de_DE"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-EU-fr_FR"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-EU-ru_RU"><span class="icon"></span> Windows</a>
+<a class="link hidden" id="win-wow-beta-KR-ko_KR"><span class="icon"></span> Windows</a>
 </td>
 <td class="download mac">
-<a href="" class="link hidden" id="mac-wow-beta-NA-en_US"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-NA-es_MX"><span class="icon"></span> Mac</a>
-<a href="" class="link" id="mac-wow-beta-EU-en_GB"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-EU-es_ES"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-EU-de_DE"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-EU-fr_FR"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-EU-ru_RU"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-beta-KR-ko_KR"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-NA-en_US"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-NA-es_MX"><span class="icon"></span> Mac</a>
+<a class="link" id="mac-wow-beta-EU-en_GB"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-EU-es_ES"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-EU-de_DE"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-EU-fr_FR"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-EU-ru_RU"><span class="icon"></span> Mac</a>
+<a class="link hidden" id="mac-wow-beta-KR-ko_KR"><span class="icon"></span> Mac</a>
 </td>
-</tr>
-<tr class="starter wow localized" id="wow-starter-EU">
-<th scope="row" colspan="2" class="details">
-<h4>Free Starter Edition</h4>
-<p class="language-selection">
-<span class="active-region">Europe</span> /
-<span class="active-language">English (EU)</span>
-<a href="" class="change-language" rel="region-wow-starter">(Change)</a>
-</p>
-<div id="region-wow-starter" class="region-selection hidden border-3">
-<p><strong>Available Regions</strong></p>
-<p class="selection regions">
-<a href="" rel="languages-wow-starter-NA">Americas &amp; Oceania</a> /
-<a href="" rel="languages-wow-starter-EU" class="active">Europe</a> /
-<a href="" rel="languages-wow-starter-RU">Russia</a> /
-<a href="" rel="languages-wow-starter-KR">Korea</a> /
-<a href="" rel="languages-wow-starter-TW">Taiwan</a>
-</p>
-<div id="languages-wow-starter-NA" class="available-languages hidden">
-<p><strong>Available Languages for Americas &amp; Oceania</strong></p>
-<p class="selection languages">
-<a href="" rel="en_US" id="language-wow-starter-NA-en_US">English (US)</a> /
-<a href="" rel="es_MX" id="language-wow-starter-NA-es_MX">Espa&ntilde;ol (AL)</a>
-</p>
-</div>
-<div id="languages-wow-starter-EU" class="available-languages">
-<p><strong>Available Languages for Europe</strong></p>
-<p class="selection languages">
-<a href="" rel="en_GB" id="language-wow-starter-EU-en_GB" class="active">English (EU)</a> /
-<a href="" rel="es_ES" id="language-wow-starter-EU-es_ES">Espa&ntilde;ol (EU)</a> /
-<a href="" rel="de_DE" id="language-wow-starter-EU-de_DE">Deutsch</a> /
-<a href="" rel="fr_FR" id="language-wow-starter-EU-fr_FR">Fran&ccedil;ais</a> /
-<a href="" rel="ru_RU" id="language-wow-starter-EU-ru_RU">Pycc&#1082;&#1080;&#1081;</a>
-</p>
-</div>
-<div id="languages-wow-starter-RU" class="available-languages hidden">
-<p><strong>Available Languages for Russia</strong></p>
-<p class="selection languages">
-<a href="" rel="ru_RU" id="language-wow-starter-RU-ru_RU">Pycc&#1082;&#1080;&#1081;</a>
-</p>
-</div>
-<div id="languages-wow-starter-KR" class="available-languages hidden">
-<p><strong>Available Languages for Korea</strong></p>
-<p class="selection languages">
-<a href="" rel="ko_KR" id="language-wow-starter-KR-ko_KR">&#54620;&#44397;&#51032;</a>
-</p>
-</div>
-<div id="languages-wow-starter-TW" class="available-languages hidden">
-<p><strong>Available Languages for Taiwan</strong></p>
-<p class="selection languages">
-<a href="" rel="zh_TW" id="language-wow-starter-TW-zh_TW">&#3652;&#3607;&#3618;</a>
-</p>
-</div>
-<p class="controls"><a href="" class="close">Save</a></p>
-</div>
-</th>
-<td class="download win">
-<a href="" class="link hidden" id="win-wow-starter-NA-en_US"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-NA-es_MX"><span class="icon"></span> Windows</a>
-<a href="" class="link" id="win-wow-starter-EU-en_GB"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-EU-es_ES"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-EU-de_DE"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-EU-fr_FR"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-EU-ru_RU"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-KR-ko_KR"><span class="icon"></span> Windows</a>
-<a href="" class="link hidden" id="win-wow-starter-TW-zh_TW"><span class="icon"></span> Windows</a>
-</td>
-<td class="download mac">
-<a href="" class="link hidden" id="mac-wow-starter-NA-en_US"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-NA-es_MX"><span class="icon"></span> Mac</a>
-<a href="" class="link" id="mac-wow-starter-EU-en_GB"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-EU-es_ES"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-EU-de_DE"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-EU-fr_FR"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-EU-ru_RU"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-KR-ko_KR"><span class="icon"></span> Mac</a>
-<a href="" class="link hidden" id="mac-wow-starter-TW-zh_TW"><span class="icon"></span> Mac</a>
-</td>
-</tr>
-<tr class="guide wow localized" id="wow-guide-NA">
-<th scope="row" colspan="2" class="details">
-<h4>Beginner's Guide</h4>
-<p class="language-selection">
-<span class="active-region">Americas &amp; Oceania</span> /
-<span class="active-language">English (US)</span>
-</p>
-</th>
-<td class="download"></td>
-<td class="download pdf">
-<a href="" class="link" id="pdf-wow-guide-NA-en_US"><span class="icon"></span> PDF</a>
-</td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-NA hidden">
-<th scope="row" class="details" rowspan="2">
-<h4>American Language Packs</h4>
-<p>Used for patching a game client with a different language.<br />(Requires the American full game client.)</p>
-</th>
-<td class="language">English (US)</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-NA hidden">
-<td class="language">Espa&ntilde;ol (AL)</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-EU">
-<th scope="row" class="details" rowspan="5">
-<h4>European Language Packs</h4>
-<p>Used for patching a game client with a different language.<br />(Requires the European full game client.)</p>
-</th>
-<td class="language">English (EU)</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-EU">
-<td class="language">Deutsch</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-EU">
-<td class="language">Espa&ntilde;ol (EU)</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-EU">
-<td class="language">Fran&ccedil;ais</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
-</tr>
-<tr class="language-pack language-pack-wow-full language-pack-wow-full-EU">
-<td class="language">Pycc&#1082;&#1080;&#1081;</td>
-<td class="download win"><a href=""><span class="icon"></span> Windows</a></td>
-<td class="download mac"><a href=""><span class="icon"></span> Mac</a></td>
 </tr>
 </tbody>
 </table>
