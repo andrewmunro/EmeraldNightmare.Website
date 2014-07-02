@@ -1,7 +1,7 @@
 <html>
   <head></head>
 <body>
-<h1><img src="../wow/static/images/logos/wof-logo.png" height="21px" width="260px"/><br />
+<h1>
         <span>Admin Login Panel</span></h1>
         <ul id="menu">
           <li><a href="dashboard.php">Dashboard</a></li>

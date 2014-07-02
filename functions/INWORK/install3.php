@@ -57,8 +57,6 @@ _gaq.push(['_trackPageLoadTime']);
 <div id="layout-top">
 <div class="wrapper">
 <div id="header">
-<br><br>
-<center><img src="wow/static/images/logos/wof-logo.png"/></center>
 <br><br><br>
 <?php include("functions/footer_man_nav.php"); ?>
 </div>

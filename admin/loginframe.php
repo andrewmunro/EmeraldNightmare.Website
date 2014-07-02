@@ -48,7 +48,6 @@ include("configs.php");
 	</head>
   <body>
     <div id="embedded-login">
-	<center><a href="#" height="46" width="190"><img src="<?php echo $website['root'];?>wow/static/images/logos/wof-logo.png" /></a>
     <br /><h2 class="wuaha2"><?php echo $website['title']; ?></h2></center>
 	<a id="embedded-close" href="javascript:;" onclick="updateParent('close')"> </a>
   <?php

@@ -32,7 +32,7 @@ include("../configs.php");
       <div id="log-Sup">
    <div id="logWrap">
 
-          <h1><img src="../wow/static/images/logos/wof-logo.png" height="21px" width="260px"/><br />
+          <h1>
         <span>Admin Login Panel</span></h1>
 		<?php
   

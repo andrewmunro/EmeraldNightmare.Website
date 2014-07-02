@@ -61,7 +61,7 @@ DD_roundies.addRule('#tabsPanel', '5px 5px 5px 5px', true);
 <div id="admin">
       <div id="wrap">
     <div id="head">
-          <h1><img src="../wow/static/images/logos/wof-logo.png" height="21px" width="260px"/><br />
+          <h1>
         <span>Admin Login Panel</span></h1>
           <ul id="menu">
         <li><a href="dashboard.php">Dashboard</a></li>

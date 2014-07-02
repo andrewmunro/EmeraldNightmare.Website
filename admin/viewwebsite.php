@@ -40,7 +40,7 @@ include("../configs.php");
       <div id="log-Sup">
     <div id="logWrap">
 
-          <h1><img src="../wow/static/images/logos/wof-logo.png" height="21px" width="260px"/><br />
+          <h1>
         <span>Admin Redirection</span></h1>
          <div id="LogPannel">
       <center><h2>Redirecting</h2></center>
