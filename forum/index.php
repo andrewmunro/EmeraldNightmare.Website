@@ -210,7 +210,8 @@ Flash.ratingImage = 'http://eu.media.blizzard.com/wow/player/rating-pegi.jpg';
 			</div>
 		</div>
 	</div>
-	</div>
+	<?php include("../footer.php"); ?>
+</div>
 <script type="text/javascript" src="../wow/static/local-common/js/search.js?v46"></script>
 <script type="text/javascript">
 //<![CDATA[
@@ -319,6 +320,5 @@ other: 'Other'
 };
 //]]>
 </script>
-<?php include("../footer.php"); ?>
 </body>
 </html>

@@ -24,7 +24,7 @@ require_once('functions.d/GetClientLink.php');
 				<ul>
 					<li><a href="#"><?php echo $website['title']; ?>
 					</a></li>
-					<li><a href="#"><?php echo $Client_down['Client_down']; ?>
+					<li><a href="account/game_client"><?php echo $Client_down['Client_down']; ?>
 					</a></li>
 				</ul>
 			</div>
@@ -34,13 +34,9 @@ require_once('functions.d/GetClientLink.php');
 				</a>
 				</h3>
 				<ul>
-					<li><a href="#"><?php echo $Account1['Account1']; ?>
-					</a></li>
 					<li><a href="<?php echo $website['root'];?>register.php"><?php echo $Account3['Account3']; ?>
 					</a></li>
 					<li><a href="<?php echo $website['root'];?>account_log.php"><?php echo $Account4['Account4']; ?>
-					</a></li>
-					<li><a href="<?php echo $website['root'];?>account_log.php"><?php echo $Account5['Account5']; ?>
 					</a></li>
 				</ul>
 			</div>

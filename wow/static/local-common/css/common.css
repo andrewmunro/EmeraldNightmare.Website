@@ -67,7 +67,7 @@ a.ui-button.imgbutton span span span { padding: 0 5px; }
 
 /* breadcrumbs */
 .ui-breadcrumb { list-style: none; margin: 0; padding: 0; float: left; }
-.ui-breadcrumb li { float: left; margin-right: 5px; padding-right: 25px; }
+.ui-breadcrumb li { float: left; margin-right: 5px; }
 .ui-breadcrumb li a { border-bottom:1px dotted; }
 .ui-breadcrumb li.last { background: none;}
 .ui-breadcrumb li.childless a,

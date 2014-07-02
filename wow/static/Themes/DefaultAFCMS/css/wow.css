@@ -1,27 +1,6 @@
 parsererror { position:absolute; }
 html { min-width: 1006px; }
-body { background: #000 url("../images/layout/bg/body-bg-baked5e1f.jpg?v=2") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
-
-@media (max-width: 1920px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1920px5e1f.jpg?v=2") }
-}
-
-@media (max-width: 1680px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1680px5e1f.jpg?v=2") }
-}
-
-@media (max-width: 1440px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1440px5e1f.jpg?v=2") }
-}
-
-@media (max-width: 1280px) {
-	body { background-image: url("../images/layout/bg/body-bg-baked-1280px5e1f.jpg?v=2") }
-}
-
-@media (max-width: 1024px) {
-  body { background-image: url("../images/layout/bg/body-bg-baked-1024px5e1f.jpg?v=2") }
-}
-
+body { background: #000 url("../images/layout/bg/body-bg-baked-1920px.jpg") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
 
 a { color: #ffb100 }
 a:hover { color: #FFF !important }
