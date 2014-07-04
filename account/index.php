@@ -321,13 +321,6 @@ tabindex="1">
 <?php echo $Man['Man47']; ?>
 </a>
 </li>
-<li class="wow-service char-move">
-<a href="<?php echo $website['root']; ?>account/chars-unst.php">
-<span class="icon glow-shadow-3"></span>
-<strong><?php echo $Man['Man48']; ?></strong>
-<?php echo $Man['Man49']; ?>
-</a>
-</li>
 </ul>
 </div>
 <div class="content additional-services" id="additional-services">

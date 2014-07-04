@@ -1088,10 +1088,10 @@ $Mail['10'] = "The E-Mail for account";
 //Finish Mail
 
 //raf-invite
-$friend['1']  = " Refer a Friend";
+$friend['1']  = " Recruit a Friend";
 $friend['2']  = "Required";
 $friend['3']  = "REFERRALS &amp; REWARDS";
-$friend['4']  = "Refer a Friend";
+$friend['4']  = "Recruit a Friend";
 $friend['5']  = "Send Invitations";
 $friend['6']  = "History/Status";
 $friend['7']  = "How It Works";
@@ -1105,9 +1105,9 @@ $friend['14'] = "Get a unique two-person mount";
 $friend['15'] = "More details on how it works...";
 $friend['16'] = "You are not allowed to Refer friends who used to or still play,";
 $friend['17'] = " Use the ";
-$friend['18'] = "Refer a Friend";
+$friend['18'] = "Recruit a Friend";
 $friend['19'] = " instead!";
-$friend['20'] = "Fill in your friend's information below, along with any custom message you would like to send, and we will send an e-mail containing an invitation to the provided address. You can track the status of each Refer a Friend invitation ";
+$friend['20'] = "Fill in your friend's information below, along with any custom message you would like to send, and we will send an e-mail containing an invitation to the provided address. You can track the status of each Recruit a Friend invitation ";
 $friend['21'] = "here";
 $friend['22'] = "Your Account Name:";
 $friend['23'] = "Your Password:";

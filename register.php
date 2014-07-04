@@ -1,6 +1,7 @@
 <?php
 include("configs.php");
 $page_cat = "account";
+$raf = (isset($_GET['raf'])) ? $_GET['raf'] : NULL;
 ?>
 
 <!doctype html>
@@ -82,12 +83,23 @@ function valid_email($email) //Small function to validate the email
     return $result;
 }
 
+function getRafData($raf, $server_db)
+{
+    $inviteCode = mysql_real_escape_string(stripslashes($raf));
+    $getEmailQuery = mysql_query("SELECT * FROM `$server_db`.`invite_member` WHERE `inv_code` = '$inviteCode';") or die(mysql_error());
+    if(mysql_num_rows($getEmailQuery) > 0)
+    {
+        return mysql_fetch_array($getEmailQuery);
+    }
+    return NULL;
+}
+
 if (!isset($_SESSION['username'])) {
     if (isset($_POST['reg'])) {
         $accountName   = mysql_real_escape_string($_POST['accountName']);
         $accountPass   = mysql_real_escape_string($_POST['accountPass']);
-        $accountEmail  = mysql_real_escape_string(stripslashes($_POST['accountEmail']));
-        $accountEmail2 = mysql_real_escape_string(stripslashes($_POST['accountEmail2']));
+        $accountEmail  = $raf != NULL ? getRafData($raf,$server_db)['friend_email'] : mysql_real_escape_string(stripslashes($_POST['accountEmail']));
+        $accountEmail2 = $raf != NULL ? getRafData($raf,$server_db)['friend_email'] : mysql_real_escape_string(stripslashes($_POST['accountEmail2']));
         mysql_select_db($server_adb, $connection_setup) or die(mysql_error());
         $check_query = mysql_query("SELECT * FROM account WHERE username = '" . $accountName . "'");
         $check       = mysql_fetch_assoc($check_query);
@@ -169,6 +181,16 @@ if (!isset($_SESSION['username'])) {
                 $register_cms = mysql_query("INSERT INTO users (id,class,firstName,lastName,registerIp,country,birth,quest1,ans1) VALUES ('" . mysql_real_escape_string($accountinfo['id']) . "','0','" . $firstName . "','" . $lastName . "','" . $ip . "','" . $country . "','" . $dob . "','" . $question . "',UPPER('" . $answer . "'))");
                 
                 if ($register_logon == true && $register_cms == true) {
+                    if($raf != NULL)
+                    {
+                        $data = getRafData($raf,$server_db);
+                        $accountID = $data["account_id"];
+                        $start_time = time();
+                        $end_time = $start_time + 30 * 24 * 3600;
+                        mysql_select_db($server_adb, $connection_setup) or die(mysql_error());
+                        mysql_query("INSERT INTO account_friends (id, friend_id, bind_date, expire_date) VALUES ('".mysql_real_escape_string($accountID)."','".mysql_real_escape_string($accountinfo['id'])."','".$start_time."','".$end_time."')") or die(mysql_error());
+                    }
+
                     echo '<div class="alert-page" align="center">';
                     echo '<div class="alert-page-message success-page">
 								<p class="text-green title"><strong>' . $re['scc1'] . '</strong></p>
@@ -207,7 +229,7 @@ if (!isset($_SESSION['username'])) {
 <select name="country" id="country" class="small border-5 glow-shadow-2 form-disabled" tabindex="1"  >
 <?php
 mysql_select_db($server_db, $connection_setup) or die(mysql_error());
-$contry = mysql_query("SELECT * FROM $server_db.country")or die(mysql_error());
+$contry = mysql_query("SELECT * FROM $server_db.country ORDER BY name")or die(mysql_error());
 while($get = mysql_fetch_array($contry))
 {
 echo'<option value="'.$get["iso3"].'">'.$get["printable_name"].'</option>';
@@ -393,11 +415,11 @@ passwordStrength3: 'Strong'
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="text" name="accountEmail" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re43']; ?>" />
+<input type="text" name="accountEmail" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" disabled="<?php echo $raf == NULL?>" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re43']; ?>" />
 <span class="inline-message" id="emailAddress-message"></span>
 </span>
 <span class="input-text input-text-small">
-<input type="text" name="accountEmail2" value="" id="lastname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re44']; ?>" />
+<input type="text" name="accountEmail2" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" disabled="<?php echo $raf == NULL?>" id="lastname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re44']; ?>" />
 <span class="inline-message" id="emailAddressConfirmation-message"></span>
 </span>
 </span>
