@@ -66,11 +66,11 @@ $page_cat = "home";
 			echo'</div>';
 			?>
             <div class="paging">
-                <a href="javascript:;" class="prev" onclick="Slideshow.prev();"></a>
+                <a href="javascript:;" class="prev" onclick="Slideshow.rotate();"></a>
 				<?php
 				$a = 1;
 				while ($a<$i){ 
-                echo '<a href="javascript:;" class="next" id="paging-'.$a.'" onclick="Slideshow.next('.$a.', this);" onMouseOver="Slideshow.preview('.$a.');"></a>';
+                echo '<a href="javascript:;" class="next" id="paging-'.$a.'" onclick="Slideshow.jump('.$a.', this);" onMouseOver="Slideshow.preview('.$a.');"></a>';
 				$a++;}
 				?>
             </div>
