@@ -1,4 +1,7 @@
-<?php include( "../configs.php"); $page_cat="security" ; // Check, if username session is NOT set then this page will jump to login page 
+<?php include( "../configs.php"); 
+$page_cat="security" ; // Check, if username session is NOT set then this page will jump to login page
+require '../classes/PHPMailerAutoload.php';
+
 if (!isset($_SESSION[ 'username'])) 
 { 
     header( 'Location: '.$website[ 'root']. 'account_log.php'); 
@@ -169,15 +172,35 @@ try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
                                                     }
 
                                                     function sendMail($to, $username, $code) {
-                                                        $subject = $accountinfo["username"].
-                                                        ' has invited you to join the Emerald Nightmare';
-                                                        $message = '<font color="yellow">Your Referal Link :</font>  <font color="green">http://www.emerald-nightmare.com/register.php?raf='.$code.'</font><p></p><br>';
-                                                        $message.= $headers = 'From: raf-invite@emerald-nightmare.com'.
-                                                        "\r\n".
-                                                        'Reply-To: do-not-reply@emerald-nightmare.com'.
-                                                        "\r\n".
-                                                        'X-Mailer: PHP/'.phpversion();
-                                                        mail($to, $subject, $message, $headers);
+                                                        $mail = new PHPMailer();
+                                                        $mail -> IsSMTP();
+
+                                                        $mail->Host       = "mail.yourdomain.com"; // SMTP server
+                                                        $mail->SMTPDebug  = 1;                     // enables SMTP debug information (for testing)
+                                                                                                   // 1 = errors and messages
+                                                                                                   // 2 = messages only
+                                                        $mail->SMTPAuth   = true;                  // enable SMTP authentication
+                                                        $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
+                                                        $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+                                                        $mail->Port       = 587;                   // set the SMTP port for the GMAIL server
+                                                        $mail->Username   = "theemeraldnightmare@gmail.com";  // GMAIL username
+                                                        $mail->Password   = "Faad6dd70c";            // GMAIL password
+
+                                                        $mail->SetFrom('do-not-reply@emerald-nightmare.com', 'Emerald Nightmare');
+
+                                                        $mail->AddReplyTo("support@emerald-nightmare.com","Emerald Nightmare");
+
+                                                        $mail->Subject = $username." has invited you to join the Emerald Nightmare";
+                                                        
+                                                        $mail->MsgHTML('<font color="green">Your Referal Link :</font>  <font color="green">http://www.emerald-nightmare.com/register.php?raf='.$code.'</font><p></p><br>');
+
+                                                        $mail->AddAddress($to, $to);
+
+                                                        if(!$mail->Send()) {
+                                                          echo "Mailer Error: " . $mail->ErrorInfo;
+                                                        } else {
+                                                          echo "Message sent!";
+                                                        }
                                                     }
 
                                                     $code = generateRandomString(6); /* START */

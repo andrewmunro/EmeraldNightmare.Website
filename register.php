@@ -415,11 +415,11 @@ passwordStrength3: 'Strong'
 </span><!--
 --><span class="input-right">
 <span class="input-text input-text-small">
-<input type="text" name="accountEmail" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" disabled="<?php echo $raf == NULL?>" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re43']; ?>" />
+<input type="text" name="accountEmail" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" <?php if($raf != NULL) {echo 'disabled="true"';} ?> id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re43']; ?>" />
 <span class="inline-message" id="emailAddress-message"></span>
 </span>
 <span class="input-text input-text-small">
-<input type="text" name="accountEmail2" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" disabled="<?php echo $raf == NULL?>" id="lastname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re44']; ?>" />
+<input type="text" name="accountEmail2" value="<?php if($raf != NULL) {echo getRafData($raf,$server_db)['friend_email']; } ?>" <?php if($raf != NULL) {echo 'disabled="true"';} ?> id="lastname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="<?php echo $re['re44']; ?>" />
 <span class="inline-message" id="emailAddressConfirmation-message"></span>
 </span>
 </span>

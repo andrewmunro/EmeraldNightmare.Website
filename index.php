@@ -21,6 +21,7 @@ $page_cat = "home";
 	<script src="<?php echo $website['root']; ?>wow/static/local-common/js/third-party/jquery-1.4.4-p1.min.js"></script>
 	<script src="<?php echo $website['root']; ?>wow/static/local-common/js/core.js"></script>
 	<script src="<?php echo $website['root']; ?>wow/static/local-common/js/tooltip.js"></script>
+	<script src="<?php echo $website['root']; ?>wow/static/local-common/js/slideshow.js"></script>
 	<script src="http://static.wowhead.com/widgets/power.js"></script>
 	<!--[if IE 6]> <script type="text/javascript">
 	//<![CDATA[
