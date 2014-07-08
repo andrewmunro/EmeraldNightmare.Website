@@ -67,7 +67,7 @@ Flash.ratingImage = 'http://eu.media.blizzard.com/wow/player/rating-pegi.jpg';
 			<div class="content-bot clear">
 				<div id="blizz-tracker-lite">
 					<div class="blizzard-posts">
-						<h2 class="header-2"><?php echo $Forum['Forum77']; ?> <a href="#">(<?php echo $View_all['View_all']; ?>)</a></h2>
+						<h2 class="header-2"><?php echo $Forum['Forum77']; ?></h2>
 						<a href="javascript:;" class="paging-arrow arrow-left"></a>
 						<a href="javascript:;" class="paging-arrow arrow-right"></a>
 						<div class="mask-wrapper">
@@ -131,15 +131,6 @@ Flash.ratingImage = 'http://eu.media.blizzard.com/wow/player/rating-pegi.jpg';
 											
 										}
 										?>
-									<div class="set">
-										<a class="tracked-blizzard-post" href="blizztracker/">
-										<span class="desc">
-										<span class="int"><?php echo $Forum['Forum78']; ?> </span>
-										</span>
-										<span class="info">
-										</span>
-										</a>
-									</div>
 								</div>
 							</div>
 							<div class="mask-edge mask-left">
