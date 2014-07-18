@@ -141,37 +141,7 @@ while($realm = mysql_fetch_array($get_realms)){
         		else echo "<font color='#00FF00'><b>".$Status['Uptime:']."</b></font> <span class='date text-area-2'>$uptime</span> <br>";	
         	?>
     	
-    	<div class="sidebar-module text-area-2" id="sidebar">
-        	<table width="300">
-        	  <tr><td width="208" height="18">
-        	<?php echo $Ind['Ind6']; ?><span class="date text-area-2"><?php echo $realm_config['version']; ?></span></td>
-            <td width="80" align="left">
-            <?php echo $Status['Tipe']; ?><span class="date text-area-2"><?php $icon = $realm['icon']; echo $type[$icon]; ?></span></td>
-        	  </tr>
-            <tr><td height="18">
-            <?php echo $Status['PjCreat']; ?>
-    		<?php
-    		$char_sql = "SELECT COUNT(*) FROM $server_cdb.characters";
-    		$sqlquery = mysql_query($char_sql) or die(mysql_error());
-    		$char = mysql_result($sqlquery,0,0);
-     
-            $char_online = "SELECT COUNT(*) FROM $server_cdb.characters WHERE online = '1'";
-    		$sql_on = mysql_query($char_online) or die(mysql_error());
-    		$char_on = mysql_result($sql_on,0,0);
-    		?>
-    		<span class="date text-area-2"><?php echo $char; ?></span>
-           	</td><td align="left">
-            <?php echo $Status['Drop']; ?><span class="date text-area-2"><?php echo $realm_config['drop_rate']; ?></span><br />
-            </td></tr>
-            <tr><td height="18">
-            <?php echo $Status['PjConect']; ?><span class="date text-area-2"><?php echo $char_on; ?></span><br />
-            <td align="left">
-            <?php echo $Status['Exp']; ?><span class="date text-area-2"><?php echo $realm_config['exp_rate']; ?></span><br />
-            </td>
-            </tr></table>
-    		<span class="clear"><!-- --></span>
-    		<br />
-    				
+    	<div class="sidebar-module text-area-2" id="sidebar">    				
     		<center>
     			<?php 
     			$bar_width = "273px";
