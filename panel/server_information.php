@@ -164,12 +164,12 @@ while($realm = mysql_fetch_array($get_realms)){
     			$hp = @percent($h,$p);
     			$b = @barWidth($a,$p,273);
     			$c = @barWidth($h,$p,273);
-    			echo "<a data-tooltip='".doFaction($server_cdb,$alliance) + $bump_alliance." <font style=\"color:#3399ff;font-weight:bold;\">".$Status['Ali']."</font> <small>".$Status['PlOnLine']."</small>'\><div style=\"width:" . $bar_width . ";height:" . $bar_height . ";\">
+    			echo "<a data-tooltip='".doFaction($server_cdb,$alliance) + $bump_alliance." <font style=\"color:#3399ff;font-weight:bold;\">".$Status['Ali']."</font> <small>".$Status['PlOnLine']."</small><div style=\"width:" . $bar_width . ";height:" . $bar_height . ";\">
     			<div style=\"float:left;text-align:right;background:url(./" . $ally_img . ");width:" . $b . "px;height:20px;\">";
     			if($show_percent) {
     				echo "<font style=\"color:#FFFFFF;font-weight:bold;\"><center>$ap%</center></font></a>";
     			}
-    			echo "<a data-tooltip='".doFaction($server_cdb,$horde) + $bump_horde." <font style=\"color:#ff3333;font-weight:bold;\">".$Status['Horde']."</font> <small>".$Status['PlOnLine']."</small>'\></div>
+    			echo "<a data-tooltip='".doFaction($server_cdb,$horde) + $bump_horde." <font style=\"color:#ff3333;font-weight:bold;\">".$Status['Horde']."</font> <small>".$Status['PlOnLine']."</small></div>
     			<div style=\"float:right;text-align:left;background:url(./" . $horde_img . ");background-position:right;width:" . $c . "px;height:20px;\">";
     			if($show_percent) {
     				echo "<font style=\"color:#FFFFFF;font-weight:bold;\"><center>$hp%</center></font></a>";
