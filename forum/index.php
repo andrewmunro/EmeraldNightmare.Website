@@ -185,7 +185,6 @@ Flash.ratingImage = 'http://eu.media.blizzard.com/wow/player/rating-pegi.jpg';
 									}
 									?>
 								</div>
-								<a class="code-of-conduct" href="#" target="_blank">Forums Code of Conduct</a>
 							</div>
 							<span class="clear">
 							<!-- -->

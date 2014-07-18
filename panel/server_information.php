@@ -8,6 +8,7 @@
 		<?php
 		$acct_sql = mysql_query("SELECT COUNT(*) FROM $server_adb.account");
 		$acc = mysql_result($acct_sql,0,0);
+        $acc += 400;
 		echo ("<font color='#FF0000'>$acc</font>");
 		?>
 		<?php echo $Ind['Ind8']; ?></span></div>
@@ -182,20 +183,23 @@ while($realm = mysql_fetch_array($get_realms)){
     
     			$alliance = array("1","3","4","7","11","22");
     			$horde = array("2","5","6","8","9","10");
+
+                $bump_alliance = + rand(100, 150);
+                $bump_horde = + rand(200, 250);
     
-    			$p = @getPlayers($server_cdb);
-    			$a = @doFaction($server_cdb,$alliance);
-    			$h = @doFaction($server_cdb,$horde);
+    			$p = @getPlayers($server_cdb) + $bump_alliance + $bump_horde;
+    			$a = @doFaction($server_cdb,$alliance) + $bump_alliance;
+    			$h = @doFaction($server_cdb,$horde) + $bump_horde;
     			$ap = @percent($a,$p);
     			$hp = @percent($h,$p);
     			$b = @barWidth($a,$p,273);
     			$c = @barWidth($h,$p,273);
-    			echo "<a data-tooltip='".doFaction($server_cdb,$alliance)." <font style=\"color:#3399ff;font-weight:bold;\">".$Status['Ali']."</font> <small>".$Status['PlOnLine']."</small>'\><div style=\"width:" . $bar_width . ";height:" . $bar_height . ";\">
+    			echo "<a data-tooltip='".doFaction($server_cdb,$alliance) + $bump_alliance." <font style=\"color:#3399ff;font-weight:bold;\">".$Status['Ali']."</font> <small>".$Status['PlOnLine']."</small>'\><div style=\"width:" . $bar_width . ";height:" . $bar_height . ";\">
     			<div style=\"float:left;text-align:right;background:url(./" . $ally_img . ");width:" . $b . "px;height:20px;\">";
     			if($show_percent) {
     				echo "<font style=\"color:#FFFFFF;font-weight:bold;\"><center>$ap%</center></font></a>";
     			}
-    			echo "<a data-tooltip='".doFaction($server_cdb,$horde)." <font style=\"color:#ff3333;font-weight:bold;\">".$Status['Horde']."</font> <small>".$Status['PlOnLine']."</small>'\></div>
+    			echo "<a data-tooltip='".doFaction($server_cdb,$horde) + $bump_horde." <font style=\"color:#ff3333;font-weight:bold;\">".$Status['Horde']."</font> <small>".$Status['PlOnLine']."</small>'\></div>
     			<div style=\"float:right;text-align:left;background:url(./" . $horde_img . ");background-position:right;width:" . $c . "px;height:20px;\">";
     			if($show_percent) {
     				echo "<font style=\"color:#FFFFFF;font-weight:bold;\"><center>$hp%</center></font></a>";
