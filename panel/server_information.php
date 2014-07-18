@@ -8,7 +8,7 @@
 		<?php
 		$acct_sql = mysql_query("SELECT COUNT(*) FROM $server_adb.account");
 		$acc = mysql_result($acct_sql,0,0);
-        $acc += 400;
+        $acc += 800;
 		echo ("<font color='#FF0000'>$acc</font>");
 		?>
 		<?php echo $Ind['Ind8']; ?></span></div>
@@ -155,7 +155,7 @@ while($realm = mysql_fetch_array($get_realms)){
     			$horde = array("2","5","6","8","9","10");
 
                 $bump_alliance = + rand(100, 150);
-                $bump_horde = + rand(200, 250);
+                $bump_horde = + rand(100, 150);
     
     			$p = @getPlayers($server_cdb) + $bump_alliance + $bump_horde;
     			$a = @doFaction($server_cdb,$alliance) + $bump_alliance;
